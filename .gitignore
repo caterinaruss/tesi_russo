@@ -1,3 +1,4 @@
 # Ignora file e cartelle temporanee e di ambiente
 .DS_Store
 venv/
+results1/
