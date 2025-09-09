@@ -1,6 +1,9 @@
-# Istruzioni per AWS
+## Clona la repository
 
-## Setup (da eseguire in ordine)
+```bash
+git clone https://github.com/caterinaruss/tesi_russo.git
+cd tesi_russo
+```
 
 1. **Crea e attiva ambiente Python**
 
