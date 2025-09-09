@@ -1,24 +1,13 @@
-# Istruzioni per AWS
+## Clona la repository
 
-## Setup (da eseguire in ordine)
+```bash
+git clone https://github.com/caterinaruss/tesi_russo.git
+cd tesi_russo
+```
 
 1. **Crea e attiva ambiente Python**
-
-Se non hai Python >= 3.10, puoi installarlo/aggiornarlo su macOS con Homebrew:
-```bash
-brew install python@3.10
-```
-Dopo l'installazione, usa:
 ```bash
 python3.10 -m venv venv
-source venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-Se hai già Python >= 3.10, puoi usare direttamente:
-```bash
-python -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
