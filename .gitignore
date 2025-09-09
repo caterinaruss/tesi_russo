@@ -2,3 +2,42 @@
 .DS_Store
 venv/
 results1/
+prova_bench.py
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.env
+# venv/ is already in the file
+env/
+
+# Log files
+*.log
+logs/
+
+# Temporary files (e.g., from Excel)
+~$*
+
+# VS Code
+.vscode/

@@ -129,4 +129,9 @@ print([str(cell.value.__class__) for cell in workbook["{sheet_name}"][2]])"""
             f.write("\n\n# ============\n".join(self.stderr))
 
     def save_temp_workbook(self, save_dir: Path, output_name: str = "workbook"):
-        self.step(f'workbook.close()\nworkbook.save(r"{save_dir / f"{output_name}_temp.xlsx"}")', dummy=True)
+        try:
+            result = self.step(f'workbook.close()\nworkbook.save(r"{save_dir / f"{output_name}_temp.xlsx"}")', dummy=True)
+            if result.code == EXEC_CODE.FAIL:
+                print(f"Warning: Failed to save temp workbook: {result.msg}")
+        except Exception as e:
+            print(f"Warning: Exception during temp workbook save: {e}")

@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 # LLM 
-MODEL_TO_USE = "gemma3:27b"  #"gemma3:27b"  #"deepseek-v2:16b"  #"gemma3:12b"
+MODEL_TO_USE = "gemma3:12b"  #"gemma3:27b"  #"deepseek-v2:16b"  #"gemma3:12b"
 
 API_PROVIDER = "ollama"
 

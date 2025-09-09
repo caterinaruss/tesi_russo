@@ -278,14 +278,23 @@ class Session:
                 if sheet_state != last_sheet_state:  # update database
 
                     self.sandbox.save_temp_workbook(self.output_dir)
-                    wb = pd.read_excel(self.output_dir / "workbook_temp.xlsx", sheet_name=None)
-                    for sheet_name, df in wb.items():
-                        # table_name = f"ws_{title2camel(sheet_name)}"
-                        table_name = sheet_name
-                        if not df.empty:
-                            self.tools["Sheet Selector"].update_table(table_name, df)
-
-                    last_sheet_state = sheet_state
+                    temp_file_path = self.output_dir / "workbook_temp.xlsx"
+                    
+                    # Check if the temp file exists and is a valid Excel file
+                    if temp_file_path.exists():
+                        try:
+                            wb = pd.read_excel(temp_file_path, sheet_name=None)
+                            for sheet_name, df in wb.items():
+                                # table_name = f"ws_{title2camel(sheet_name)}"
+                                table_name = sheet_name
+                                if not df.empty:
+                                    self.tools["Sheet Selector"].update_table(table_name, df)
+                            last_sheet_state = sheet_state
+                        except Exception as e:
+                            print(f"Warning: Unable to read temp Excel file: {e}")
+                            # Continue without updating the database
+                    else:
+                        print(f"Warning: Temp file {temp_file_path} does not exist")
 
                 if key_info is not None:
                     key_info = f"/*\nPotentially helpful information for your next step:\n{key_info}\n*/"
