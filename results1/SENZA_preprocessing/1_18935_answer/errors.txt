@@ -1,0 +1,62 @@
+
+
+# ============
+
+
+# ============
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.18/Frameworks/Python.framework/Versions/3.10/lib/python3.10/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<string>", line 1, in <module>
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/workbook/workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet Report Format does not exist.'
+
+
+# ============
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.18/Frameworks/Python.framework/Versions/3.10/lib/python3.10/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<string>", line 1, in <module>
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/workbook/workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet ReportFormat does not exist.'
+
+
+# ============
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.18/Frameworks/Python.framework/Versions/3.10/lib/python3.10/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<string>", line 1, in <module>
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/workbook/workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet report_format does not exist.'
+
+
+# ============
+
+
+# ============
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.18/Frameworks/Python.framework/Versions/3.10/lib/python3.10/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<string>", line 2, in <module>
+AttributeError: 'Worksheet' object has no attribute 'sheet_max_row'
+
+
+# ============
+
+
+# ============
+
+
+# ============
+
+
+# ============
+
+
+# ============
+
+
+# ============

@@ -1,0 +1,47 @@
+
+
+# ============
+
+
+# ============
+
+
+# ============
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.18/Frameworks/Python.framework/Versions/3.10/lib/python3.10/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<string>", line 8, in <module>
+AttributeError: 'tuple' object has no attribute 'row'
+
+
+# ============
+
+
+# ============
+
+
+# ============
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.18/Frameworks/Python.framework/Versions/3.10/lib/python3.10/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<string>", line 1, in <module>
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/workbook/workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/writer/excel.py", line 294, in save_workbook
+    writer.save()
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/writer/excel.py", line 275, in save
+    self.write_data()
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/writer/excel.py", line 79, in write_data
+    self._write_images()
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/writer/excel.py", line 116, in _write_images
+    self._archive.writestr(img.path[1:], img._data())
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/drawing/image.py", line 48, in _data
+    img = _import_image(self.ref)
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/openpyxl/drawing/image.py", line 16, in _import_image
+    img = PILImage.open(img)
+  File "/Users/caterinarusso/tesi_russo/venv/lib/python3.10/site-packages/PIL/Image.py", line 3519, in open
+    fp.seek(0)
+ValueError: I/O operation on closed file.
+
+
+# ============

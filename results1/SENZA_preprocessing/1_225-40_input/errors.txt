@@ -1,0 +1,28 @@
+
+
+# ============
+
+
+# ============
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.18/Frameworks/Python.framework/Versions/3.10/lib/python3.10/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<string>", line 1, in <module>
+AttributeError: module 'openpyxl.utils' has no attribute 'column_letter'. Did you mean: 'get_column_letter'?
+
+
+# ============
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.18/Frameworks/Python.framework/Versions/3.10/lib/python3.10/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<string>", line 3, in <module>
+TypeError: Worksheet.iter_rows() got an unexpected keyword argument 'min_cols'
+
+
+# ============
+
+
+# ============
+
+
+# ============

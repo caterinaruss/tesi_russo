@@ -1,0 +1,15 @@
+pandas
+openpyxl
+openai
+matplotlib
+tiktoken
+numpy
+scikit-learn
+seaborn
+sqlalchemy
+records
+fastapi
+httpx
+colorama
+pyyaml
+jinja2
